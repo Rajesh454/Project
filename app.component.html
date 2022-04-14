@@ -1,0 +1,69 @@
+<app-header></app-header>
+<!--<div class="container">
+    <input type="checkbox" [(ngModel)]="isSelected"/> HideComponent
+    <div>
+        <input type="text" [(ngModel)]="text"/>
+    </div>
+    <div *ngIf="isSelected">
+        <app-lifecycle [ename]="text"></app-lifecycle>
+    </div>
+</div>-->
+<app-pipes></app-pipes>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+<!-- <h1>This is first angular project</h1> -->
+<!--one -way data binding using string interpolation-->
+<!-- <h2>{{title}}</h2> -->
+<!--one -way data binding using []-->
+<!-- <h2 [innerText]="para"></h2> -->
+<!-- {{}} converts everything in string-->
+<!-- <div> 
+    <button disabled="{{isSelected}}" ngNonBindable>Using {{}}</button>
+</div>
+<br/>
+<div>
+    <button [disabled]="isSelected">Using []</button>
+</div>
+<h2>{{text}}</h2> -->
+<!-- event binding data flows from view to componanet-->
+<!-- <div>
+    <button (click)="show()">Click Me</button>
+</div> -->
+<!-- 2-way data binding [()] banana in a box -->
+<!-- <div>
+    <input type="text" [(ngModel)]="para"/>
+</div> -->
+
+<!-- Condiditional display of html tags directive *ngIf-->
+<!-- <input type="checkbox" [(ngModel)]="isSelected"/> Accept Terms and conditions
+<div *ngIf="isSelected"> 
+    <h3>This will be displayed conditionally</h3>
+</div>
+<h1>For directive</h1>
+<ul>
+    <li *ngFor="let city of cities">{{city}}</li>
+</ul>
+<div>
+    <h2>Customer Details</h2>
+    <div *ngFor="let cust of customers">
+        <div [ngSwitch]="cust.membership">
+            <div class="cust" *ngSwitchCase = "'Gold'">
+                <div>{{cust.name}}</div>
+                <div>Click here for Gold offers</div>
+            </div>
+            <div class="cust" *ngSwitchCase = "'Silver'">
+                <div>{{cust.name}}</div>
+                <div>Would you upgrade your membership for better offers</div>
+            </div>
+            <div class="cust" *ngSwitchCase = "'Premium'">
+                <div>{{cust.name}}</div>
+                <div>Wohooo!! Enjoy premium offers offered</div>
+            </div>
+            <div class="cust" *ngSwitchDefault>
+                <div>{{cust.name}}</div>
+                <div>Register as a member to enjoy benefits</div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
